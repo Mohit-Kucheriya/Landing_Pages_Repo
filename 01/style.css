@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(344, 9%, 51%);
+  display: flex;
+}
+
+#part1 {
+  height: 100%;
+  width: 35%;
+}
+
+#part2 {
+  height: 100%;
+  width: 55%;
+  background-image: url(https://media.gettyimages.com/id/1491257968/photo/sydney-sweeney-portrait.jpg?s=2048x2048&w=gi&k=20&c=lSvH6F9Bu0EjILhbScp36FOUjv6O1D368xJAAE4da7Y=);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#part3 {
+  height: 100%;
+  width: 10%;
+  background-color: #f6f5f2;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: hsla(0, 0%, 39%, 0.15);
+}
+
+#text-div {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#text-div h1 {
+  font-size: 85px;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+  color: aliceblue;
+  line-height: 70px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  text-shadow: 3px 3px 8px hsl(340, 5%, 24%);
+}
+
+#small-img {
+  width: 250px;
+  height: 350px;
+  background-image: url(https://media.gettyimages.com/id/1491258253/photo/sydney-sweeney-portrait.jpg?s=612x612&w=0&k=20&c=yc41OjaK8hRpZ54tS4MpqDOQY-dpMJKzzS4tqBn96Iw=);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  transform: translate(0, -50%);
+}
+
+#vertical-text {
+  position: absolute;
+  right: -48.5%;
+  top: -7%;
+  transform: rotate(90deg);
+  transform-origin: 0% 0%;
+}
+
+#vertical-text h1 {
+  font-size: 75px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #74512d;
+  color: transparent;
+  font-family: "Mukta", sans-serif;
+  font-weight: 800;
+  letter-spacing: 7px;
+}
+
+#nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  justify-content: space-between;
+  left: 3%;
+  top: 5%;
+}
+
+#nav h2 {
+  color: aliceblue;
+  font-family: "Mukta", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px hsl(340, 5%, 24%);
+}
