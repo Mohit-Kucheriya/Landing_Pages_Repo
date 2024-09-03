@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+#top {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: 50% 60%;
+  background-size: cover;
+}
+
+#overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.132);
+}
+
+#text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20%;
+  padding: 0 8vw;
+}
+
+#textright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+#textright p {
+  font-size: 13px;
+  width: 40%;
+  color: #444;
+}
+
+#text h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  color: #444;
+}
+
+#icons {
+  display: flex;
+  gap: 2vw;
+}
+#icons i {
+  color: #444;
+}
+
+#bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+#bone {
+  width: 25%;
+  height: 100%;
+  background-color: #fff;
+  color: #444;
+  padding: 15px;
+}
+
+#bone h2 {
+  margin: 1vw 0;
+}
+#bone p {
+  font-size: 13px;
+}
+
+#btwo {
+  width: 25%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1511516781637-877ae8444896?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+#bthree {
+  width: 20%;
+  height: 100%;
+}
+
+#bthreetop {
+  width: 100%;
+  height: 50%;
+  background-color: lightgray;
+  color: #444;
+  padding: 10px;
+}
+
+#bthreetop p {
+  margin-top: 0.5vw;
+  font-size: 13px;
+}
+#bthreebottom {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://images.unsplash.com/photo-1527567018838-584d3468eb85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+#bfour {
+  width: 30%;
+  height: 100%;
+  background-color: #444;
+  color: lightgray;
+  padding: 15px;
+}
+
+.notf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 1vw; */
+  padding: 15px 0;
+}
+
+.notf .photo {
+  width: 40px;
+  height: 40px;
+  background-image: url(https://media.istockphoto.com/id/656673020/photo/handsome-in-spectacles.webp?b=1&s=170667a&w=0&k=20&c=5vM12a1G-cIr0RpSUIUPC_lTmJYiewMmGJz6O0wnLCY=);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.notf p {
+  width: 85%;
+  font-size: 13px;
+}
+
+/* @media (max-width : 500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    #overlay #text h1{
+        font-size: 8vw;
+    }
+
+   #overlay #text #textright{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 15px;
+    }
+
+    #overlay #text #textright #icons{
+        margin-top: 20px;
+    }
+} */
+@media (max-width: 500px) {
+  #top {
+    height: 40%;
+  }
+
+  #text {
+    flex-direction: column;
+    align-items: flex-start;
+    bottom: 10%;
+    padding: 0 4vw;
+  }
+
+  #textright {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #textright p {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  #text h1 {
+    font-size: 6vw;
+  }
+
+  #icons {
+    gap: 5vw;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #bottom {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #bone,
+  #btwo,
+  #bthree,
+  #bfour {
+    width: 100%;
+    height: auto;
+  }
+
+  #bthreetop,
+  #bthreebottom {
+    height: 200px;
+  }
+
+  .notf {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .notf p {
+    width: 100%;
+    font-size: 12px;
+  }
+}
