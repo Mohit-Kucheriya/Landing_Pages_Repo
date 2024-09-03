@@ -1,0 +1,399 @@
+@font-face {
+  font-family: domain;
+  src: url(./Domain.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  background-color: #222;
+  overflow: hidden;
+}
+
+#page1 {
+  width: 100vw;
+  height: 150vh;
+  background-color: #c4bcb2;
+  position: relative;
+  overflow: hidden;
+}
+
+#nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid #333;
+}
+
+#nav img {
+  height: 30px;
+  width: 30%;
+}
+
+#nav h5 {
+  font-size: 15px;
+  font-weight: 200;
+  width: 30%;
+}
+
+#nav i {
+  width: 30%;
+  text-align: right;
+}
+
+#elems {
+  height: 430px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+#elem1 {
+  width: 30%;
+  height: 100%;
+}
+
+#elem2 {
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+  padding: 20px 60px;
+  text-align: center;
+}
+
+#elem3 {
+  width: 30%;
+  height: 100%;
+}
+
+#elem1 #img-div {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+#elem3 #img-div {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+#img-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+}
+
+#img-div:hover img {
+  scale: 1.1;
+}
+
+#elem1 h4 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Canopee;
+}
+
+#elem1 h4 span {
+  background-color: #b73c12;
+  color: #c4bcb2;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 3px;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+
+#elem1 p {
+  font-size: 18px;
+  margin: 15px 0;
+  font-family: domain;
+  font-weight: 100;
+}
+
+#elem3 h4 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Canopee;
+}
+
+#elem3 h4 span {
+  background-color: #b73c12;
+  color: #c4bcb2;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 3px;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+
+#elem3 p {
+  font-size: 18px;
+  margin: 15px 0;
+  font-family: domain;
+  font-weight: 100;
+}
+
+#elem2 h2 {
+  font-family: canopee;
+  font-size: 70px;
+  font-weight: 100;
+  margin-left: 20px;
+}
+
+#elem2 h3 {
+  font-family: domain;
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+#elem2 h6 {
+  font-size: 20px;
+  font-family: domain;
+  font-weight: 100;
+}
+
+#elem2 h6 span {
+  font-family: canopee;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+#page1 h1 {
+  font-size: 600px;
+  font-weight: 100;
+  font-family: canopee;
+  letter-spacing: -30px;
+  background-color: #1c1c19;
+  color: #c4bcb2;
+  line-height: 500px;
+  width: 98%;
+  margin: 0 15px;
+}
+
+#page2 {
+  width: 100%;
+  height: 150vh;
+  background-color: #c4bcb2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#page2-left {
+  height: 100%;
+  width: 30%;
+  /* background-color: cyan; */
+  padding-right: 20px;
+  border-right: 1px solid #222;
+}
+
+#page2-left h2 {
+  font-size: 100px;
+  font-family: canopee;
+  /* text-align: center; */
+  line-height: 130px;
+  font-weight: 100;
+  text-decoration: 1px line-through #333;
+}
+
+#page2-left h2 span {
+  font-size: 180px;
+  font-weight: 900;
+}
+
+#page2-left img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border: 1px solid #333;
+}
+
+#page2-left p {
+  font-size: 30px;
+  font-family: domain;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+#page2-left p span {
+  font-family: canopee;
+  font-size: 55px;
+  padding: 1px 8px;
+  background-color: black;
+  color: #c4bcb2;
+}
+
+#page2-right {
+  height: 100%;
+  width: 70%;
+  padding: 0 20px;
+}
+
+#page2-right img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #333;
+}
+
+#page2-right h1 {
+  font-size: 100px;
+  font-family: canopee;
+  width: 98%;
+  text-decoration: 1px line-through #333;
+}
+
+#page3 {
+  height: 65vh;
+  background-color: #c4bcb2;
+  padding: 20px;
+  position: relative;
+}
+
+#page3 h1 {
+  font-size: 450px;
+  font-family: canopee;
+  width: 78%;
+  background-color: #1c1c19;
+  color: #c4bcb2;
+  /* margin-left: 1%; */
+  line-height: 400px;
+  padding: 0 20px;
+  font-weight: 100;
+  letter-spacing: -15px;
+}
+
+#page3 img {
+  position: absolute;
+  height: 380px;
+  top: 5%;
+  right: 1.5%;
+}
+
+#page4 {
+  width: 100%;
+  height: 100vh;
+  background-color: #c4bcb2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#page4-left {
+  width: 63%;
+  height: 100%;
+  padding: 0 30px;
+  border-right: 1px solid #222;
+}
+
+#page4-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#page4-right {
+  width: 36%;
+  height: 100%;
+  /* display: flex; */
+}
+
+#page4-right h2 {
+  font-size: 100px;
+  font-family: canopee;
+  font-weight: 100;
+  line-height: 130px;
+  text-decoration: 1px line-through #333;
+}
+
+#page4-right h2 span {
+  font-size: 220px;
+  font-family: canopee;
+  text-decoration: 1px line-through #333;
+}
+
+#page4-right p {
+  font-size: 30px;
+  font-family: domain;
+  font-weight: 100;
+  width: 92%;
+  margin-bottom: 50px;
+}
+
+#page5 {
+  height: 60vh;
+  background-color: #c4bcb2;
+}
+
+#page6 {
+  width: 100%;
+  background-color: #c4bcb2;
+  padding: 20px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#page6::-webkit-scrollbar {
+  display: none;
+}
+#page6 h1 {
+  font-size: 70px;
+  font-family: domain;
+  font-weight: 100;
+  margin-right: 15px;
+  display: inline-block;
+  animation-name: scroll;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+#page6 h1 span {
+  width: fit-content;
+  background-color: #1c1c19;
+  color: #c4bcb2;
+  padding: 8px;
+  text-transform: uppercase;
+  font-family: canopee;
+}
+
+#page6:hover h1 {
+  animation-play-state: paused;
+}
+
+#page7 {
+  height: 50px;
+  background-color: #c4bcb2;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 25px));
+  }
+}
