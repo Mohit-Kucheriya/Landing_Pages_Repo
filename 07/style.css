@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 #nav {
@@ -110,6 +110,9 @@ body {
   bottom: -2%;
   left: 30%;
   transform: translate((-50%, 0%));
+}
+#main img{
+  border-radius: 20px;
 }
 
 #main #img1 {
